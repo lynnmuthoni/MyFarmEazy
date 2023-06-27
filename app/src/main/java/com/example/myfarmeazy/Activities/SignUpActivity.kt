@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.myfarmeazy.DashboardActivity
 import com.example.myfarmeazy.R
 
 class SignUpActivity : AppCompatActivity() {
@@ -16,7 +17,7 @@ class SignUpActivity : AppCompatActivity() {
         buttonSignUp = findViewById(R.id.BtnSignUp)
 
         buttonSignUp!!.setOnClickListener {
-            val intent= Intent(this,DashboardActivity ::class.java)
+            val intent= Intent(this, LoginActivity ::class.java)
             startActivity(intent)
             finish()
         }
